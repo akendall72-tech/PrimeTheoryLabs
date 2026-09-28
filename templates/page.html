@@ -1,0 +1,107 @@
+<!doctype html>
+<!--
+  PAGE TEMPLATE
+  To add a page (for example an About page at primetheorylabs.com/about/):
+    1. Copy this file to about/index.html
+    2. Change the <title>, description, canonical URL and the content inside <main>
+    3. Delete the "noindex" line below
+    4. Add a link to the new page in the header and footer nav of every page
+    5. Add the URL to sitemap.xml
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page title | Prime Theory Labs</title>
+  <meta name="description" content="One sentence about this page.">
+  <link rel="canonical" href="https://primetheorylabs.com/page-url/">
+  <meta name="robots" content="noindex">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Prime Theory Labs">
+  <meta property="og:title" content="Page title | Prime Theory Labs">
+  <meta property="og:image" content="https://primetheorylabs.com/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/assets/img/logo-mark.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#E9EEF8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121A3A" media="(prefers-color-scheme: dark)">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER (same on every page) ============ -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/" aria-label="Prime Theory Labs home">
+        <picture>
+          <source media="(max-width: 599px)" srcset="/assets/img/logo-mark.svg" width="1024" height="1024">
+          <source media="(prefers-color-scheme: dark)" srcset="/assets/img/logo-horizontal-dark.svg" width="976" height="160">
+          <img src="/assets/img/logo-horizontal.svg" alt="Prime Theory Labs" width="976" height="160">
+        </picture>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="/#services">Services</a></li>
+          <li><a href="/#apps">Apps</a></li>
+          <li><a href="/#approach">Approach</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" aria-labelledby="page-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Eyebrow</p>
+          <h1 id="page-title" class="title-1">Page heading</h1>
+          <p class="lede">A short introduction to the page.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <h2 class="title-2">Card heading</h2>
+            <p class="muted">Card text.</p>
+          </article>
+          <article class="card">
+            <h2 class="title-2">Card heading</h2>
+            <p class="muted">Card text.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER (same on every page) ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand">
+        <img src="/assets/img/logo-mark.svg" alt="" width="36" height="36">
+        <div>
+          <p class="small"><strong>Prime Theory Labs LLC</strong></p>
+          <p class="caption muted">© <span id="year">2026</span> · Apps, proven.</p>
+        </div>
+      </div>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="/#services">Services</a></li>
+          <li><a href="/#apps">Apps</a></li>
+          <li><a href="/#approach">Approach</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
