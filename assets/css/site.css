@@ -32,6 +32,7 @@
   --band-bg:         #121A3A;  /* contact band */
   --band-text:       #FFFFFF;
   --band-muted:      #A9B2CC;
+  --band-link:       #8FA2F5;
 
   /* Type */
   --font-sans: "Sora", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -398,6 +399,8 @@ a:hover { text-decoration-thickness: 2px; }
   padding: 0;
 }
 .site-footer nav a { color: var(--text-muted); text-decoration: none; font-size: 14px; }
+.site-footer .footer-brand a { color: var(--text-muted); }
+.site-footer .footer-brand a:hover { color: var(--link); }
 .site-footer nav a:hover { color: var(--link); text-decoration: underline; }
 
 /* 5. Sections -------------------------------------------------------------- */
@@ -433,6 +436,12 @@ a:hover { text-decoration-thickness: 2px; }
   .hero .container { grid-template-columns: 1.25fr 1fr; }
 }
 .hero .eyebrow { margin-bottom: var(--space-4); }
+.hero-title {
+  font-size: clamp(32px, 5vw, 44px);
+  line-height: 1.18;
+  letter-spacing: -0.01em;
+  max-width: 18em;
+}
 .hero .lede { margin-top: var(--space-6); max-width: 34em; }
 .hero .button-row { margin-top: var(--space-12); }
 
@@ -478,6 +487,17 @@ a:hover { text-decoration-thickness: 2px; }
 .band .eyebrow { color: var(--brand-gold); margin-bottom: var(--space-2); }
 .band p { color: var(--band-muted); margin-top: var(--space-4); max-width: 36em; }
 .band .button-row { margin-top: var(--space-6); }
+.band .contact-list {
+  display: grid;
+  gap: 0 var(--space-4);
+  margin-top: var(--space-6);
+}
+@media (min-width: 640px) {
+  .band .contact-list { grid-template-columns: max-content 1fr; }
+}
+.band .contact-list dt { font-weight: 600; color: var(--band-muted); }
+.band .contact-list dd { margin-top: 0; }
+.band .contact-list a { color: var(--band-link); font-weight: 600; }
 .band .button-secondary { color: var(--band-text); border-color: var(--band-text); }
 .band .button-secondary:hover { background: rgba(255, 255, 255, 0.08); }
 

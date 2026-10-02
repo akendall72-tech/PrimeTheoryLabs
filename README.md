@@ -32,7 +32,7 @@ Then open http://localhost:8790. Use a local server rather than opening the file
 
 **Add a service.** In the Services section of `index.html`, copy the `Custom iOS apps` card or replace the dashed "More to come" placeholder. Remove `card-wide` from a card if you don't want it to span two columns.
 
-**Turn on the contact email.** Once email works for the domain (for example Cloudflare Email Routing or Google Workspace), open `index.html`, find the Contact section, update the "coming soon" sentence, and uncomment the email button below it.
+**Change the contact email.** The address (andrew@primetheorylabs.com) appears in the Contact section and the `"email"` line near the top of `index.html`, and in the footer of every page (`index.html`, `404.html`, `templates/page.html`). Search for it and replace each one.
 
 **Add a page.** Copy `templates/page.html` to a folder named after the page, for example `about/index.html`, which becomes primetheorylabs.com/about/. Follow the steps in the comment at the top of the template, including adding the link to the header and footer nav on every page and adding the URL to `sitemap.xml`.
 
