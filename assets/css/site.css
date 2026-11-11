@@ -346,6 +346,43 @@ a:hover { text-decoration-thickness: 2px; }
 .app-card .app-features span { font-size: 14px; line-height: 22px; color: var(--text-muted); }
 .app-card .app-link { margin-top: var(--space-6); font-weight: 600; }
 
+/* Apps stack one per row */
+.app-list { display: grid; gap: var(--space-6); }
+
+/* Featured app: a fuller card with feature columns and a call to action */
+.app-card-featured { padding: var(--space-6); }
+@media (min-width: 640px) {
+  .app-card-featured { padding: var(--space-12) var(--space-12) var(--space-12) var(--space-6); }
+}
+.app-card-featured .eyebrow { margin-bottom: var(--space-2); }
+.app-card-featured .app-pitch {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-bottom: var(--space-2);
+}
+.app-split {
+  display: grid;
+  gap: var(--space-6);
+  margin-top: var(--space-6);
+}
+@media (min-width: 768px) {
+  .app-split { grid-template-columns: 1fr 1fr; gap: var(--space-12); }
+}
+.app-split h4 { font-size: 16px; line-height: 26px; }
+.app-split .checklist { margin-top: var(--space-2); grid-template-columns: 1fr; }
+.app-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4) var(--space-6);
+  margin-top: var(--space-6);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--grid-line);
+}
+.app-cta-title { font-weight: 600; }
+
 /* Numbered steps */
 .steps {
   list-style: none;

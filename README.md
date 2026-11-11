@@ -28,7 +28,7 @@ Then open http://localhost:8790. Use a local server rather than opening the file
 
 ## Common changes
 
-**Add an app.** In `index.html`, find the `APP CARD` comment in the Apps section, copy the whole `<article class="card app-card">` block, and edit it. Put the icon (a square PNG, 256px or larger) in `assets/img/apps/`. The grid rearranges itself for any number of apps.
+**Add an app.** In `index.html`, find the `APP CARD` comment in the Apps section, copy the whole `<article class="card app-card">` block, and edit it. Put the icon (a square PNG, 192px or larger) in `assets/img/apps/`. Apps stack one per row. Field Ready uses a fuller "featured" card (`app-card-featured`) with feature columns and an email button; copy that one instead for an app you want to promote.
 
 **Add a service.** In the Services section of `index.html`, copy the `Custom iOS apps` card or replace the dashed "More to come" placeholder. Remove `card-wide` from a card if you don't want it to span two columns.
 
