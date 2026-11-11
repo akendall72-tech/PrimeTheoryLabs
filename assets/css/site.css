@@ -340,7 +340,7 @@ a:hover { text-decoration-thickness: 2px; }
   margin-top: var(--space-4);
   display: grid;
   gap: var(--space-4);
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
 }
 .app-card .app-features strong { display: block; font-weight: 600; }
 .app-card .app-features span { font-size: 14px; line-height: 22px; color: var(--text-muted); }
